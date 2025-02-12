@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dario Dice</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="dice"></div>
-    <button id="rollButton">Roll Dice</button>
+    <div id="dice">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+    </div>
+    <form id="nameForm">
+        <input type="text" id="name1" placeholder="Enter name 1" required>
+        <input type="text" id="name2" placeholder="Enter name 2" required>
+        <input type="text" id="name3" placeholder="Enter name 3" required>
+        <input type="text" id="name4" placeholder="Enter name 4" required>
+        <input type="text" id="name5" placeholder="Enter name 5" required>
+        <input type="text" id="name6" placeholder="Enter name 6" required>
+        <button type="button" onclick="submitNames()">Submit Names</button>
+    </form>
+    <button id="rollDiceButton" onclick="rollDice()">Roll Dice</button>
 </body>
 </html>
